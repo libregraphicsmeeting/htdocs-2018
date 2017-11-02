@@ -16,14 +16,16 @@
 <!-- Header -->
 <?php get_header(); ?>
 <?php $img_folder = get_stylesheet_directory_uri() . '/img/'; ?>
+<!-- Sidebar -->
+<?php get_sidebar(); ?>
 <!-- Main -->
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
         <div class="region-landing">
-            <img class="intro-bg" src="<?php echo $img_folder ?>logo-big--web.svg" 
+            <img class="intro-bg" src="<?php echo $img_folder ?>logo-big--web.svg"
                  alt="Logo of LGM. Drawing of three squares joined together made with blue lines." />
             <div class="intro-title">
-                <img src="<?php echo $img_folder ?>save-the-date--web.svg" 
+                <img src="<?php echo $img_folder ?>save-the-date--web.svg"
                      alt="Save the date image. See text below."/>
                 <h1 class="hidden">
                     Libre Graphics Meeting 2018. Seville, 26-30 April
@@ -36,13 +38,13 @@
             </div>
             <div class="intro-menu">
                 <?php wp_nav_menu( array(
-                    name => 'main', 
+                    name => 'main',
                 )); ?>
             </div>
             <h4 class="see-news" id="lastnews">
                 Recent news
             </h4>
-         </div>  
+         </div>
          <div class="recent-news">
                 <?php wp_reset_query(); ?>
                 <?php $args = array(
@@ -68,10 +70,10 @@
                             </h2>
                         </div>
                         </a>
-                    </div>              
+                    </div>
                 <?php endforeach; ?>
             </div>
-      
+
         </div>
         <?php get_template_part( 'regions/recent-news.php' ); ?>
     </main>
@@ -79,5 +81,3 @@
 
 <!-- Footer -->
 <?php get_footer(); ?>
-
-

@@ -774,6 +774,13 @@ footer#colophon:after {
   top: 24px;
 }
 
+/* line 3, sass/regions/_sidebar.sass */
+#secondary {
+  position: fixed;
+  right: 24px;
+  top: 108px;
+}
+
 /* line 1, sass/blocks/_colophon.sass */
 .real-colophon {
   position: absolute;
@@ -972,6 +979,16 @@ footer#colophon:after {
 .intro-title img {
   width: 360px;
   max-width: 100%;
+}
+
+/* line 5, sass/blocks/_lang-switcher.sass */
+#qtranslate-2 > select {
+  background: white;
+  border: 0;
+  font-size: 0.9em;
+  font-weight: bold;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 @media screen and (min-width: 768px) {
