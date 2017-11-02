@@ -779,6 +779,7 @@ footer#colophon:after {
   position: fixed;
   right: 24px;
   top: 108px;
+  z-index: 10000;
 }
 
 /* line 1, sass/blocks/_colophon.sass */
@@ -989,7 +990,6 @@ footer#colophon:after {
   font-weight: bold;
   -moz-appearance: none;
   -webkit-appearance: none;
-  z-index: 10000;
 }
 
 @media screen and (min-width: 768px) {
