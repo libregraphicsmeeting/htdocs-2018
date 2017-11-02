@@ -20,6 +20,7 @@ This repository contains:
 All "standard" plugins and themes are installed through the Wordpress UI:
 
 - WP Libre Form: for the registration, the call for participation  and the reimbursements.
+- qTranslateX for having a spanish and and english version
 
 ## Licensing
 
