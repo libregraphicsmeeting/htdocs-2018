@@ -1,0 +1,64 @@
+// Static pages
+
+@import compass/css3/transform
+@import compass/css3/transition
+
+article.page
+  margin: 0 auto
+  max-width: 100%
+  padding: $m
+  width: 760px
+  +breakpoint('xl')
+    width: 960px
+
+article.page
+  margin-bottom: $m
+  section
+    +breakpoint('sm')
+      column-count: 2
+    font-size: 1.2em
+    font-weight: bold
+  h2
+    color: red
+    border-bottom: 4px solid red
+    margin: $m*2 0
+    padding-top: $m
+  .entry-title
+    +breakpoint('md')
+      +transform-origin(0, 0)
+      +transform(translate(-$m*4, 60vh) rotate(-90deg))
+      position: fixed
+      width: 100vh
+      z-index: 10000
+    border-bottom: 8px solid cyan
+    padding-bottom: $m/2
+  .edit-link
+    +links_nocolors
+    border-bottom: 1px dotted red
+    text-transform: uppercase
+    font-size: .8em
+    letter-spacing: 2px
+
+.content-navigation
+  text-align: right
+  display: none
+  +breakpoint('md')
+    display: block
+    position: fixed
+    width: 200px
+    z-index: 10000
+    left: calc(50vw - 620px)
+    top: $m*4
+  +breakpoint('xl')
+    left: calc(50vw - 720px)
+    top: 0
+  li
+    font-weight: bold
+    +transition(color .2s ease)
+    letter-spacing: 1px
+    background: cyan
+    margin: $m/3 0
+    padding: $m/2 $m
+  li:hover
+    color: red
+    cursor: pointer

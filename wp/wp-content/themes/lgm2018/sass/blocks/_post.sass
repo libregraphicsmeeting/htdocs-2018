@@ -1,0 +1,158 @@
+// Static pages
+
+@import compass/css3/transform
+@import compass/css3/transition
+
+article.post,
+#comments,
+.post-navigation,
+  margin: 0 auto
+  max-width: 100%
+  padding: $m
+  width: 760px
+  +breakpoint('xl')
+    width: 960px
+
+article.post
+  margin-bottom: $m
+  border-left: 8px solid cyan
+  .entry-meta
+    color: red
+    font-weight: bold
+    +links_nocolors
+  section
+    +breakpoint('sm')
+      column-count: 2
+    font-size: 1.2em
+    font-weight: bold
+  h2
+    color: red
+    border-bottom: 4px solid red
+    margin: $m*2 0
+    padding-top: $m
+  .entry-title
+    margin-top: $m/3
+    border-bottom: 8px solid cyan
+    padding-bottom: $m/2
+  .edit-link
+    +links_nocolors
+    border-bottom: 1px dotted red
+    text-transform: uppercase
+    font-size: .8em
+    letter-spacing: 2px
+  .entry-content
+    +breakpoint('sm')
+      column-count: 2
+    font-size: 1.2em
+    font-weight: bold
+  .byline,
+  time.updated
+    display: none
+
+// Header image
+.single-post .single-featured-image-header
+  +breakpoint('sm')
+    margin-left: 25vw
+  position: relative
+.single-post .featured-bg
+  filter: grayscale(100%)
+  opacity: .25
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  z-index: -1
+.single-post .wp-post-image
+  filter: url('./filters/duotone-lgm.svg#lgm')
+
+// Comments
+.comments-title
+  +h(4)
+.comment-list
+  border-top: 2px solid $color_text
+  padding: $m/2 $m $m*2
+.comment
+  +links_black_cyan
+  a 
+    border-bottom: 1px dotted
+.avatar
+  filter: url('./filters/duotone-lgm.svg#lgm')
+.icon-mail-reply
+  display: none
+#reply-title
+  padding-top: $m/2
+  +h(5)
+  border: 2px solid $color_text
+  margin: 0 auto
+  line-height: $m*1.5
+  padding: $m/2
+  width: 200px
+  text-align: center
+  text-transform: uppercase
+  top: -$m
+  background: white
+  position: relative
+  +transition(color .2 ease)
+  &:hover
+    cursor: pointer
+    color: red
+  &:before
+    content: ""
+    position: absolute
+    width: 760px
+    left: -280px
+    +breakpoint('xl')
+      width: 960px
+      left: -380px
+    top: $m
+    border-bottom: 2px solid $color_text
+    z-index: -1
+  &:after
+    content: "\25bd"
+    margin-left: 4px
+  &.active:after
+    content: "\25b3"
+
+// Navigation
+.post-navigation
+  +links_nocolors
+  font-size: .8em
+  a:hover
+    border-bottom: 2px solid red
+.nav-links
+  +clearfix
+.nav-previous
+  float: left
+.nav-next
+  float: right
+  .nav-subtitle
+    text-align: right
+.nav-title
+  display: inline-block
+  font-weight: bold
+.icon-arrow-right,
+.icon-arrow-left
+  max-width: $m
+  height: $m/2
+  display: inline-block
+  color: red
+.nav-subtitle
+  display: block
+  margin-bottom: $m/3
+.screen-reader-text
+  display: none
+
+.fake-breadcrumb
+  text-align: center
+  font-size: .9em
+  font-weight: bold
+  +links_nocolors
+  max-width: 100%
+  width: 760px
+  position: absolute
+  left: calc(50vw - 380px)
+  bottom: $m*11
+  +breakpoint('xl')
+    width: 960px
+    left: calc(50vw - 480px)

@@ -1,0 +1,19 @@
+// Branding block of the site
+
+@import compass/css3/transition
+
+.page-branding
+  +breakpoint('md')
+    position: fixed
+    z-index: 10000
+  img
+    max-width: $m*6
+    display: block
+
+.page-logo
+  max-width: $m*4
+  margin: $m
+  +transition(opacity .25s ease)
+  &:hover
+    opacity: .8
+

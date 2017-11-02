@@ -1,0 +1,16 @@
+// Main footer of the site
+
+footer#colophon
+  +links_nocolors
+  border-top: 6px solid $color_text
+  margin: $m
+  padding: 0 $m*2 
+  height: $m*8
+  +clearfix
+
++breakpoint('sm')
+  .footer-widget-1
+    float: left
+  .footer-widget-2
+    float: right
+

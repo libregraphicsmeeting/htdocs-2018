@@ -1,0 +1,17 @@
+// Background of the landing section
+
+@import compass/css3/animation
+
+.intro-bg
+  position: absolute
+  +animation(fadein 2s 1)
+  z-index: -1
+  +breakpoint('xs')
+    max-width: inherit
+    width: 200vw
+    left: -25vw
+    top: $m
+  +breakpoint('sm')
+    width: 40vw
+    left: 30vw
+    top: 20vh

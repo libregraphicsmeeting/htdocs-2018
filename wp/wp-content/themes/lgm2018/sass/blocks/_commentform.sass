@@ -1,0 +1,53 @@
+@import compass/css3/border-radius
+
+.logged-in #commentform
+  height: $m*15
+
+#commentform
+  color: $color_text
+  width: 480px
+  max-width: 100%
+  margin: 0 auto
+  height: $m*24
+  border-bottom: 4px solid
+  +transition(height 1s ease)
+  label
+    display: inline-block
+    font-weight: bold
+    min-width: 100px
+  input[type=text],
+  input[type=email],
+  input[type=url]
+    background: none
+    border: 1px dashed
+    border-width: 0 0 1px 0
+    padding: $m/4 $m/2
+    width: 100%
+    margin-bottom: $m
+  textarea
+    background: none
+    border: 1px dashed
+    border-width: 0 1px
+    padding: $m/2
+    margin-top: $m/2
+    margin-bottom: $m
+  input[type=submit]
+    +border-radius(0)
+    line-height: $m*2
+    border: 0
+    background: $color_text
+    color: white
+  .form-submit
+    margin-top: $m/2
+    font-weight: bold
+  .comment-notes,
+  .logged-in-as
+    margin-bottom: $m
+    font-size: .8em 
+    +links_nocolors
+    a
+      border-bottom: 1px dotted red
+#commentform.inactive
+  height: 0
+  overflow: hidden
+  border-bottom: 0

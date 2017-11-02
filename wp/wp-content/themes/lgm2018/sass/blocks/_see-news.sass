@@ -1,0 +1,29 @@
+// Button in landing to swith to recent news
+// {{theme}}/front-page.php 
+
+@import compass/css3/transition
+
+.see-news
+  +breakpoint('xs')
+    text-align: center
+    margin-top: $m*3
+  +breakpoint('sm')
+    position: absolute
+    width: 200px
+    bottom: $m
+    +animation(showup 1s 1)
+    left: calc(50vw - 100px)
+  text-transform: uppercase
+  +h(5)
+  +transition(color .25s ease)
+  &:after
+    content: "\25BC"
+    position: absolute
+    width: 50px
+    text-align: center
+    left: 35px
+    top: $m*.75
+    color: cyan
+  &:hover
+    cursor: pointer
+    color: red  

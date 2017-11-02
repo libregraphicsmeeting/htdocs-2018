@@ -1,0 +1,74 @@
+// Recent news view in frontpage
+// {{theme}}/front-page.php 
+
+@import compass/css3/transform
+
+.recent-news
+  max-width: 960px
+  margin: 0 auto
+  padding: $m 0
+  +links_nocolors
+  +breakpoint('xs')
+    padding-top: 0
+
+.recent-news__item
+  +clearfix
+  position: relative
+  padding: $m 0
+
+.recent-news__item > a
+  display: block
+
+.recent-news__item-meta
+  display: inline-block
+  margin-top: $m
+  +breakpoint('sm')
+    position: absolute
+    top: $m*2
+    border-bottom: 4px solid red
+
+.recent-news__item-picture
+  +breakpoint('sm')
+    max-width: 75%
+.recent-news__item-date
+  +h(5)
+  padding: 0 $m
+.recent-news__item-title
+  margin: 0
+  +breakpoint('sm')
+    line-height: $m*2
+    background: white
+  padding: 0 $m
+.recent-news__item-picture
+  overflow: hidden
+
+
++breakpoint('xs')
+  .recent-news__item:nth-child(even)
+    background-color: #eee
++breakpoint('sm')
+  .recent-news__item:nth-child(even)
+    .recent-news__item-picture
+      float: right
+    .recent-news__item-meta
+      left: 0
+    .recent-news__item-date
+      padding-left: $m
+  .recent-news__item:nth-child(odd)
+    .recent-news__item-picture
+      float: left
+    .recent-news__item-meta
+      right: 0
+    .recent-news__item-date
+      text-align: right
+      padding-right: $m
+.recent-news__item-picture img
+  filter: url('./filters/duotone-lgm.svg#lgm')
+  +transition(transform 1s ease)
+.recent-news__item:hover
+  +breakpoint('sm')
+    //outline: 4px solid red
+    img 
+      +transform(scale(1.05))
+      filter: none
+    

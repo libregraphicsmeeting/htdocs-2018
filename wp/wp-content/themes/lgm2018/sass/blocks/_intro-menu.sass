@@ -1,0 +1,30 @@
+// Menu block underneath introductory text
+// {{theme}}/front-page.php 
+
+@import compass/css3/transition
+
+.intro-menu
+  +links_nocolors
+  text-align: center
+  +h(4)
+  margin-top: $m*1.5
+  +breakpoint('xs')
+    display: none
+
+.intro-menu .menu-item
+  padding: 0 $m/2
+  display: inline-block
+  position: relative
+  &::after
+    content: " "
+    position: absolute
+    border-bottom: $m/4 solid $color_text
+    width: 0
+    left: $m/2
+    bottom: -$m/2
+    +transition(width 1s ease)
+  &:hover::after
+    width: calc(100% - #{$m})
+
+.intro-menu .menu-item:first-child
+  display: none

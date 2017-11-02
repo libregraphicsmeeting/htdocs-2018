@@ -1,0 +1,61 @@
+// Navigation menu
+
+
+@import compass/css3/transition
+@import compass/css3/transform
+
+.hamburguer-icon
+  width: $m*2
+  float: right
+  margin-bottom: $m
+  background: white
+  padding: $m/2
+  i
+    display: block
+    width: 100%
+    height: $m/6
+    margin-bottom: $m/6
+    background-color: $color_text
+    +transition(transform .5s ease)
+  &:hover
+    cursor: pointer
+    i
+      background-color: darken(red, 10%) !important
+
+.main-menu--navigation,
+.social-menu--navigation
+  +h(4)
+  +links_nocolors
+  display: none
+  clear: both
+  padding: $m
+  background-color: $color_text
+  color: white
+.main-menu--navigation .menu-item
+  margin: $m/3 0
+.main-menu--navigation .menu-item
+.social-menu--navigation .menu-item
+  +transition(color .2s ease)
+.main-menu--navigation .menu-item:hover,
+.social-menu--navigation .menu-item:hover,
+  color: red
+  
+.main-menu--navigation
+  border-top: 2px solid red
+  +h(4)
+.social-menu--navigation
+  +h(5)
+
+body.navigation-opened .main-menu--navigation,
+body.navigation-opened .social-menu--navigation,
+  display: block
+
+body.navigation-opened .hamburguer-icon
+  i:first-child
+    +transform(translateY(7px) rotate(45deg))
+  i:nth-child(2)
+    display: none
+  i:nth-child(3)
+    +transform(translateY(-2px) rotate(-45deg))
+  i
+    background-color: red

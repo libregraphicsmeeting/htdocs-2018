@@ -1,0 +1,35 @@
+@import compass/css3/transition
+
+=link_black_cyan
+  +transition(color .1s ease)
+  &:link, &:visited
+    color: $color_text
+  &:hover
+    color: red
+  &:active
+    color: $color_text
+
+=links_black_cyan
+  a
+    +link_black_cyan
+
+=link_nocolors
+  &:link, &:visited, &:hover, &:active
+    color: inherit
+
+=links_nocolors
+  a
+    +link_nocolors
+
+=link_red_black
+  +transition(color .1s ease)
+  &:link, &:visited
+    color: red
+  &:hover
+    color: $color_text
+  &:active
+    color: red
+
+=links_red_black
+  a
+    +link_red_black
