@@ -517,26 +517,32 @@ select:hover {
   cursor: pointer;
 }
 
-/* line 71, sass/base/_1_base.sass */
+/* line 70, sass/base/_1_base.sass */
+mark {
+  background-color: #111;
+  color: white;
+}
+
+/* line 75, sass/base/_1_base.sass */
 ::-moz-selection {
   background: #02002a;
   color: #fdffd5;
 }
 
-/* line 74, sass/base/_1_base.sass */
+/* line 78, sass/base/_1_base.sass */
 ::selection {
   background: #02002a;
   color: #fdffd5;
 }
 
-/* line 79, sass/base/_1_base.sass */
+/* line 83, sass/base/_1_base.sass */
 ::-webkit-scrollbar {
   height: 24px;
   width: 8px;
   background: rgba(0, 0, 0, 0.15);
 }
 
-/* line 84, sass/base/_1_base.sass */
+/* line 88, sass/base/_1_base.sass */
 ::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.25);
 }
