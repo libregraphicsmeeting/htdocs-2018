@@ -519,7 +519,7 @@ select:hover {
 
 /* line 70, sass/base/_1_base.sass */
 mark {
-  background-color: #111;
+  background-color: red;
   color: white;
 }
 
