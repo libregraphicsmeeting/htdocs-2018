@@ -24,7 +24,7 @@ add_import_path "sass/abstractions"
 #
 # Output style
 #
-output_style  = (environment == :production) ? :compressed : :expanded
+output_style  = :compressed 
 line_comments = (environment == :production) ? false : true
 
 # To prevent warnings about deprecated stuff
