@@ -705,7 +705,7 @@ select:hover {
 
 /* line 4, sass/regions/_content.sass */
 #content {
-  min-height: calc(100vh - 432px);
+  min-height: calc(100vh - 272px);
 }
 
 /* line 3, sass/regions/_footer.sass */
@@ -1135,7 +1135,7 @@ body.navigation-opened .hamburguer-icon i {
 }
 /* line 9, sass/blocks/_page-logo.sass */
 .page-branding img {
-  max-width: 144px;
+  max-width: 96px;
   display: block;
 }
 
@@ -1182,20 +1182,36 @@ article.page section {
     column-count: 2;
   }
 }
-/* line 21, sass/blocks/_page.sass */
+/* line 17, sass/base/_2_links.sass */
+article.page section a:link, article.page section a:visited, article.page section a:hover, article.page section a:active {
+  color: inherit;
+}
+/* line 22, sass/blocks/_page.sass */
+article.page section a {
+  -moz-transition: border-color 0.25s ease;
+  -o-transition: border-color 0.25s ease;
+  -webkit-transition: border-color 0.25s ease;
+  transition: border-color 0.25s ease;
+  border-bottom: 2px solid cyan;
+}
+/* line 25, sass/blocks/_page.sass */
+article.page section a:hover {
+  border-color: red;
+}
+/* line 27, sass/blocks/_page.sass */
 article.page h2 {
   color: red;
   border-bottom: 4px solid red;
   margin: 48px 0;
   padding-top: 24px;
 }
-/* line 26, sass/blocks/_page.sass */
+/* line 32, sass/blocks/_page.sass */
 article.page .entry-title {
   border-bottom: 8px solid cyan;
   padding-bottom: 12px;
 }
 @media screen and (min-width: 992px) {
-  /* line 26, sass/blocks/_page.sass */
+  /* line 32, sass/blocks/_page.sass */
   article.page .entry-title {
     -moz-transform-origin: 0 0;
     -ms-transform-origin: 0 0;
@@ -1210,7 +1226,7 @@ article.page .entry-title {
     z-index: 10000;
   }
 }
-/* line 35, sass/blocks/_page.sass */
+/* line 41, sass/blocks/_page.sass */
 article.page .edit-link {
   border-bottom: 1px dotted red;
   text-transform: uppercase;
@@ -1222,13 +1238,13 @@ article.page .edit-link a:link, article.page .edit-link a:visited, article.page 
   color: inherit;
 }
 
-/* line 42, sass/blocks/_page.sass */
+/* line 48, sass/blocks/_page.sass */
 .content-navigation {
   text-align: right;
   display: none;
 }
 @media screen and (min-width: 992px) {
-  /* line 42, sass/blocks/_page.sass */
+  /* line 48, sass/blocks/_page.sass */
   .content-navigation {
     display: block;
     position: fixed;
@@ -1239,13 +1255,13 @@ article.page .edit-link a:link, article.page .edit-link a:visited, article.page 
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 42, sass/blocks/_page.sass */
+  /* line 48, sass/blocks/_page.sass */
   .content-navigation {
     left: calc(50vw - 720px);
     top: 0;
   }
 }
-/* line 55, sass/blocks/_page.sass */
+/* line 61, sass/blocks/_page.sass */
 .content-navigation li {
   font-weight: bold;
   -moz-transition: color 0.2s ease;
@@ -1257,7 +1273,7 @@ article.page .edit-link a:link, article.page .edit-link a:visited, article.page 
   margin: 8px 0;
   padding: 12px 24px;
 }
-/* line 62, sass/blocks/_page.sass */
+/* line 68, sass/blocks/_page.sass */
 .content-navigation li:hover {
   color: red;
   cursor: pointer;
