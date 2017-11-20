@@ -1,0 +1,50 @@
+// Site forms
+
+.libre-form
+  width: 640px
+  max-width: 100%
+  margin: 0 auto
+
+.form-field__label
+  font-weight: bold
+  display: block
+  margin-bottom: $m/2
+  font-size: 1.2em
+
+.libre-form .form-field
+  margin-bottom: $m
+
+.libre-form input[type=text],
+.libre-form input[type=email],
+.libre-form input[type=password],
+  border: 1px dashed $color_text
+  border-width: 0 0 1px 0
+  width: 100%
+
+.libre-form textarea
+  border: 1px dashed $color_text
+  border-width: 0 1px
+  width: 100%
+  padding: $m
+
+.required .form-field__label:before
+  content: "* "
+  color: red
+
+.form-field__explanation
+  font-size: .9em
+  font-style: italic
+  margin-top: $m/2
+
+.libre-form button[type=submit],
+.libre-form input[type=submit],
+  display: block
+  width: 120px
+  margin: 0 auto
+  padding: $m/2
+  text-align: center
+  font-weight: bold
+  border: 2px solid $color_text
+  margin-top: $m*3
+  background: $color_text
+  color: white
