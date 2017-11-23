@@ -1,10 +1,15 @@
 # htdocs-2018
 
-The website for the lgm 2018
-
+The WordPress theme for the LGM 2018
 
 - The website is published at <http://libregraphicsmeeting.org/2018>
 - The admin console is available through <http://libregraphicsmeeting.org/2018/wp/wp-admin>
+
+## How to contribute
+
+If you would like to propose new content for the site, and do not have access to the [WordPress Admin Console](http://libregraphicsmeeting.org/2018/wp/wp-admin), then please post an issue [here](https://github.com/libregraphicsmeeting/htdocs-2018/issues/new) with your post draft (either inline, or with link to where it can be found)
+
+## What is here
 
 This repository contains:
 
@@ -27,3 +32,11 @@ All "standard" plugins and themes are installed through the Wordpress UI:
 All the WordPress related parts (the files included in *plugins* and *themes*) are released under the GNU General Public License v2.
 
 All the graphic assets (the files included in *graphics*) are released under the CC-BY license.
+
+## Contact
+
+You can get in touch with us through several channels
+
+- <https://github.com/libregraphicsmeeting/htdocs-2018/issues> for issues about this site
+- <http://lists.freedesktop.org/mailman/listinfo/libre-graphics-meeting> for the general LGM community (also on [IRC](irc://irc.feenode.net/#LGM)
+- <https://twitter.com/LGMeeting>
