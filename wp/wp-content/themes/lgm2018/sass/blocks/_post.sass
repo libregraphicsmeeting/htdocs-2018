@@ -25,6 +25,12 @@ article.post
       column-count: 2
     font-size: 1.2em
     font-weight: bold
+    +links_nocolors
+    a
+      +transition(border-color .25s ease)
+      border-bottom: 2px solid cyan
+      &:hover
+        border-color: red
   h2
     color: red
     border-bottom: 4px solid red
@@ -74,7 +80,7 @@ article.post
   padding: $m/2 $m $m*2
 .comment
   +links_black_cyan
-  a 
+  a
     border-bottom: 1px dotted
 .avatar
   filter: url('./filters/duotone-lgm.svg#lgm')
