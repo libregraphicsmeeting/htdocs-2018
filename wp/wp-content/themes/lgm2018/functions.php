@@ -47,7 +47,7 @@ function lgm2018_enqueue_theme_styles()
         array( $parent_style ),
         wp_get_theme()->get('Version')
     );
-    if(is_page(6)) wp_enqueue_style(
+    if(is_page('2018-edition')) wp_enqueue_style(
         'leaflet',
         'https://unpkg.com/leaflet@1.2.0/dist/leaflet.css',
         array(), '1.2.0'
