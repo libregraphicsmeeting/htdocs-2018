@@ -2,6 +2,7 @@
 
 @import compass/css3/transform
 @import compass/css3/transition
+@import compass/css3/columns
 
 article.page
   margin: 0 auto
@@ -11,11 +12,19 @@ article.page
   +breakpoint('xl')
     width: 960px
 
+.avoid-break
+  +column-break-inside(avoid)
+  break-inside: avoid
+  page-break-inside: avoid
+  display: table
+  > h3
+    margin-top: 0
+
 article.page
   margin-bottom: $m
   section
     +breakpoint('sm')
-      column-count: 2
+      +column-count(2)
     font-size: 1.2em
     font-weight: bold
     +links_nocolors
@@ -44,6 +53,10 @@ article.page
     text-transform: uppercase
     font-size: .8em
     letter-spacing: 2px
+  h3
+    border-bottom: 2px solid $color_text
+  section > h3
+    margin-top: 0
 
 .content-navigation
   text-align: right
