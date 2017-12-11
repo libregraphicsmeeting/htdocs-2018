@@ -1,6 +1,6 @@
 # htdocs-2018
 
-The WordPress theme for the LGM 2018
+The Website for the LGM 2018
 
 - The website is published at <http://libregraphicsmeeting.org/2018>
 - The admin console is available through <http://libregraphicsmeeting.org/2018/wp/wp-admin>
