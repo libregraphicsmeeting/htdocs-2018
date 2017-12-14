@@ -4,7 +4,7 @@
 
 var map = L.map('map', {
   scrollWheelZoom: false,
-}).setView([37.3754338,-5.9900776], 12);
+}).setView([37.4064714,-5.9892440], 15);
 
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
