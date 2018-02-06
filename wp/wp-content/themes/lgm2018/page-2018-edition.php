@@ -37,6 +37,7 @@ get_header(); ?>
 		</main><!-- #main -->
     <div class="region-preface">
         <div id="map"></div>
+        <p><a href="http://www.openstreetmap.org/?mlat=37.3976&mlon=-5.9877#map=15/37.3976/-5.9877&layers=N">See on OpenStreetMap</a></p>
     </div>
 	</div><!-- #primary -->
 </div><!-- .wrap -->
