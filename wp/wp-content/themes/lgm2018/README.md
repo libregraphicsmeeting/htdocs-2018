@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# LGM 2018 Wordpress theme
+# The Website for the LGM 2018
 
-
-=======
-# Wordpress theme for the LGM 2018
->>>>>>> 0dc57217f46f43461117da3a288cd75c9aa79eb4
+Theme and custom plugins for the LGM 2018
