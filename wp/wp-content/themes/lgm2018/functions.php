@@ -4,7 +4,7 @@ if (!empty($_SERVER['HTTPS'])) {
   function add_hsts_header($headers) {
     $headers['strict-transport-security'] = 'max-age=31536000; includeSubDomains';
     // $headers['Content-Security-Policy'] = 'default-src https:; script-src self nonce-lgm2018';
-    $headers['Content-Security-Policy'] = 'default-src https:; script-src self unsafe-inline';
+    $headers['Content-Security-Policy'] = 'default-src https:; script-src \'self\' \'unsafe-inline\'';
     $headers['X-Frame-Options'] = 'SAMEORIGIN';
     $headers['X-XSS-Protection'] = '1; mode=block';
     $headers['X-Content-Type-Options'] = 'X-Content-Type-Options: nosniff';
