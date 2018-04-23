@@ -1,5 +1,21 @@
 <?php
 
+if (!empty($_SERVER['HTTPS'])) {
+  function add_hsts_header($headers) {
+    $headers['strict-transport-security'] = 'max-age=31536000; includeSubDomains';
+    $headers['Content-Security-Policy'] = 'default-src https';
+    $headers['X-Frame-Options'] = 'SAMEORIGIN';
+    $headers['X-XSS-Protection'] = '1; mode=block';
+    $headers['X-Content-Type-Options'] = 'X-Content-Type-Options: nosniff';
+    $headers['Referrer-Policy'] = 'strict-origin';
+
+
+    return $headers;
+  }
+
+add_filter('wp_headers', 'add_hsts_header');
+}
+
 /**
  *    lgm2018_enqueue_theme_scripts
  *    Append theme scripts to document
