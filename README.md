@@ -27,6 +27,21 @@ All "standard" plugins and themes are installed through the Wordpress UI:
 - WP Libre Form: for the registration, the call for participation  and the reimbursements.
 - qTranslateX for having a spanish and and english version
 
+Some plugins that are not in the wordpress repository are / will be in this repository
+
+- [wplf export](https://github.com/libreform/export/archive/master.zip) (does not work with a custom url / a wp not at the root of the server)
+
+## Installing locally
+
+- Install Wordpress
+- Move Wordpress to the wp directory
+- make sure that all the "wp-content" directory is writable for the web server (to install plugins)
+- add `define('FS_METHOD', 'direct');` to `wp-config.php` to allow installing plugins to the local filesystem.
+- Copy the content of the front page
+- In "Settings > Reading" Set the front page to "Front"
+- Remove all the widgets from "Appearance > Widgets"
+- If you have qTranslate installed, add the "qTranlsate Language Chooser" to the "Blog sidebar"
+
 ## Licensing
 
 All the WordPress related parts (the files included in *plugins* and *themes*) are released under the GNU General Public License v2.
