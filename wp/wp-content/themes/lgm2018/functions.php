@@ -7,7 +7,7 @@ if (!empty($_SERVER['HTTPS'])) {
     $headers['Content-Security-Policy'] = 'default-src https:; script-src \'self\' \'unsafe-inline\'';
     $headers['X-Frame-Options'] = 'SAMEORIGIN';
     $headers['X-XSS-Protection'] = '1; mode=block';
-    $headers['X-Content-Type-Options'] = 'X-Content-Type-Options: nosniff';
+    $headers['X-Content-Type-Options'] = 'nosniff';
     $headers['Referrer-Policy'] = 'strict-origin';
 
 
