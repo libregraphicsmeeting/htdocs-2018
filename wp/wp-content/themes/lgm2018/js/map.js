@@ -6,8 +6,10 @@ var map = L.map('map', {
   scrollWheelZoom: false,
 }).setView([37.4064714,-5.9892440], 15);
 
-L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+// we cannot load (yet) through https, probably because osm is using a self signed certificate
+// and browsers do not like that.
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
 L.marker([37.3978382,-5.9851946]).addTo(map).bindPopup('<a href="http://www.tramallol.cc/compartir_espacio/" target="_blank">Tramallol</a>. Pasaje Mallol, 22');
