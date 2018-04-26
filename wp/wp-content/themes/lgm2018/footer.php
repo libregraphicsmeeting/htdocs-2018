@@ -39,7 +39,7 @@
 			</div><!-- .wrap -->
 		</footer><!-- #colophon -->
     <div class="real-colophon">
-        $ sudo apt install freedom
+        $ sudo apt install freedom | <a href="https://libregraphicsmeeting.org/lgm/">lgm organization</a> | <a href="https://github.com/libregraphicsmeeting">source code</a>
     </div>
 	</div><!-- .site-content-contain -->
 </div><!-- #page -->
